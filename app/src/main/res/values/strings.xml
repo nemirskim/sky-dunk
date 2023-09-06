@@ -2,4 +2,7 @@
     <string name="app_name">SkyDunk</string>
     <string name="team_logo">Team logo</string>
     <string name="last_game">Last game</string>
+    <string name="game_final_score_label">Game\'s final score</string>
+    <string name="game_final_score_numeric">%1$s:%2$s</string>
+    <string name="game_date_numeric">25.10.2023</string>
 </resources>

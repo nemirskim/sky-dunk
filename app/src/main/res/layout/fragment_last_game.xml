@@ -8,38 +8,68 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="157dp"
         android:backgroundTint="@color/grey_background"
         app:cardCornerRadius="10dp"
         app:cardElevation="2dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/teamLogoHomeImageView"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/team_logo"
+                tools:srcCompat="@drawable/bos" />
+
             <TextView
-                android:id="@+id/lastGameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="16dp"
+                android:fontFamily="@font/inter_light"
                 android:text="@string/last_game"
                 android:textAllCaps="true"
                 android:textColor="@color/black_text_color"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/gameScoreTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/game_final_score_label"
                 android:fontFamily="@font/inter_medium"
-                android:text="100:111"
-                app:layout_constraintEnd_toEndOf="@id/lastGameTextView"
-                app:layout_constraintStart_toStartOf="@id/lastGameTextView"
-                app:layout_constraintTop_toBottomOf="@id/lastGameTextView" />
+                android:text="@string/game_final_score_numeric"
+                android:textColor="@color/black_text_color"
+                android:textSize="20sp" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/gameDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/inter_extralight"
+                android:text="@string/game_date_numeric"
+                android:textColor="@color/black_text_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/teamLogoVisitorImageView"
+                android:layout_width="88dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/team_logo"
+                tools:srcCompat="@drawable/gsw" />
+
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </FrameLayout>
