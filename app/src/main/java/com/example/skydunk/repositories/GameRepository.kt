@@ -27,7 +27,7 @@ class GameRepository : GameRepositoryInterface {
                     season = 2021,
                     homeTeam = TeamDTO(
                         id = 54,
-                        abbreviation = "DAL",
+                        abbreviation = "BOS",
                         city = "Dallas",
                         conference = ConferenceType.WEST,
                         division = "",
@@ -36,7 +36,7 @@ class GameRepository : GameRepositoryInterface {
                     ),
                     visitorTeam = TeamDTO(
                         id = 19,
-                        abbreviation = "RAP",
+                        abbreviation = "GSW",
                         city = "Toronto",
                         conference = ConferenceType.WEST,
                         division = "",
