@@ -13,10 +13,10 @@ class MainActivity() : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater).also { setContentView(it.root) }
 
-        viewModel.name.bind {
+/*        viewModel.name.bind {
             binding.teamNameTextView.text = it
         }
 
-        binding.teamLogoImageView.setImageResource(R.drawable.bos)
+        binding.teamLogoImageView.setImageResource(R.drawable.bos)*/
     }
 }
