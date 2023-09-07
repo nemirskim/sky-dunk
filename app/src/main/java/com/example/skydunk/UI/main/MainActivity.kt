@@ -2,7 +2,6 @@ package com.example.skydunk.UI.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.skydunk.R
 import com.example.skydunk.databinding.ActivityMainBinding
 
 class MainActivity() : AppCompatActivity() {
