@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.LifecycleOwner
 import com.example.skydunk.UI.extensions.getResource
+import com.example.skydunk.UI.extensions.toSimpleDate
 import com.example.skydunk.databinding.FragmentLastGameBinding
 
 class LastGameFragment : Fragment() {
@@ -33,7 +34,7 @@ class LastGameFragment : Fragment() {
             gameScoreTextView.text = it
         }
         viewModel.date.observe(activity as LifecycleOwner) {
-            gameDateTextView.text = it.toString()
+            gameDateTextView.text = it.toSimpleDate()
         }
         viewModel.homeTeamLogo.observe(activity as LifecycleOwner) {
             homeTeamLogoImageView.setImageDrawable(context?.getResource(it))
